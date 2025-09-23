@@ -1,18 +1,18 @@
 import React from 'react';
-import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaNode, FaGit } from 'react-icons/fa';
-import { SiTypescript, SiMongodb, SiExpress, SiTailwindcss } from 'react-icons/si';
+import { FaReact, FaJs, FaHtml5, FaNode, FaGit, FaPython} from 'react-icons/fa';
+import { SiMongodb, SiExpress, SiCplusplus } from 'react-icons/si';
 import './Skills.css';
 
 const Skills = () => {
   const skills = [
-    { name: 'React', icon: <FaReact />, level: 90 },
+    { name: 'React', icon: <FaReact />, level: 80 },
     { name: 'JavaScript', icon: <FaJs />, level: 85 },
-    { name: 'TypeScript', icon: <SiTypescript />, level: 80 },
-    { name: 'HTML5', icon: <FaHtml5 />, level: 95 },
-    { name: 'CSS3', icon: <FaCss3Alt />, level: 90 },
-    { name: 'Node.js', icon: <FaNode />, level: 75 },
+    { name: 'Git', icon: <FaGit />, level: 95 },
+    { name: 'HTML5', icon: <FaHtml5 />, level: 85 },
+    { name: 'Node.js', icon: <FaNode />, level: 85 },
     { name: 'MongoDB', icon: <SiMongodb />, level: 70 },
-    { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: 85 },
+    { name: 'Python', icon: <FaPython />, level: 95 },
+    { name: 'C++', icon: <SiCplusplus />, level: 95 },
   ];
 
   return (
