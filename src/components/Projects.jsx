@@ -25,7 +25,7 @@ const Projects = () => {
     {
       id: 3,
       title: 'Personal Portffolio',
-      description: 'A responsive weather dashboard that displays current weather and forecasts using external APIs with beautiful data visualizations.',
+      description: ' The site serves as a hub for potential employers, collaborators, and peers to explore my work, technical expertise, and achievements.',
       image: '/portfolio.png',
       technologies: ['React', 'JavaSript', 'HTML', 'CSS3'],
       github: 'https://github.com/samaksh-arora/portfolio.git',
