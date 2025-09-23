@@ -8,7 +8,7 @@ const Projects = () => {
       id: 1,
       title: 'Prizeversity',
       description: 'A web-based platform designed to engage students through contests, challenges, and rewards programs. Built with React.js, Node.js, and MongoDB, it allows students to participate in skill-based competitions, track their progress, and earn rewards. ',
-      image: '/prizeversity.png',
+      image: '/Prizeversity.png',
       technologies: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS'],
       github: 'https://github.com/nasserhadim/prizeversity',
       demo: 'https://prizeversity.com'
