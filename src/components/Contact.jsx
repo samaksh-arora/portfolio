@@ -40,15 +40,15 @@ const Contact = () => {
             <div className="contact-details">
               <div className="contact-item">
                 <FaEnvelope className="contact-icon" />
-                <span>your.email@example.com</span>
+                <span>samaksharora.09@gmail.com</span>
               </div>
               <div className="contact-item">
                 <FaPhone className="contact-icon" />
-                <span>+1 (555) 123-4567</span>
+                <span>+1 (647) 461-6474</span>
               </div>
               <div className="contact-item">
                 <FaMapMarkerAlt className="contact-icon" />
-                <span>New York, NY</span>
+                <span>Windsor, Ontario</span>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaHeart } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -8,26 +8,26 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-info">
-            <h3>Your Name</h3>
-            <p>Full Stack Developer passionate about creating amazing web experiences.</p>
+            <h3>Samaksh Arora</h3>
+            <p>Software Enginner passionate about making a profound impact using technology.</p>
           </div>
           
           <div className="footer-links">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/samaksh-arora" target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/arorasamaksh" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
+            <a href="mailto:samaksharora.09@gmail.com">
+              <FaEnvelope />
             </a>
           </div>
         </div>
         
         <div className="footer-bottom">
           <p>
-            Made with <FaHeart className="heart" /> by Your Name © 2025
+            Made with <FaHeart className="heart" /> by Samaksh Arora © 2025
           </p>
         </div>
       </div>
