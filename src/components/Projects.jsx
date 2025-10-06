@@ -29,7 +29,7 @@ const Projects = () => {
       image: '/portfolio.png',
       technologies: ['React', 'JavaSript', 'HTML', 'CSS3'],
       github: 'https://github.com/samaksh-arora/portfolio.git',
-      demo: 'https://demo.com'
+      demo: 'https://samaksharora.com'
     }
   ];
 
