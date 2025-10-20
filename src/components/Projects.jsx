@@ -18,7 +18,7 @@ const Projects = () => {
       title: 'Drink Up!',
       description: 'Drink Up is an engaging water-tracking app that gamifies daily hydration. Built with Next.js, Flask, and SQLite, it allows users to log water intake, monitor progress, and earn 27 uniquely designed badges for reaching milestones. ',
       image: '/drinkup.png',
-      technologies: ['React', 'Socket.io', 'Express', 'PostgreSQL'],
+      technologies: ['Next.js', 'Python', 'SQLite'],
       github: 'https://github.com/samaksh-arora/winhacks2025',
       demo: 'https://www.youtube.com/watch?v=lVFicxcUrvY'
     },
