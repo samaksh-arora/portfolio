@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -9,6 +9,7 @@ const Contact = () => {
         <h2 className="section-title">Get In Touch</h2>
 
         <div className="contact-content">
+          {/* Left side */}
           <div className="contact-info">
             <h3>Let's work together!</h3>
             <p>
@@ -35,6 +36,42 @@ const Contact = () => {
                 <FaMapMarkerAlt className="contact-icon" />
                 <span>Windsor, Ontario</span>
               </div>
+            </div>
+          </div>
+
+          {/* ✅ Right side (new contact card) */}
+          <div className="contact-card">
+            <h4>Prefer to reach out directly?</h4>
+            <p>
+              You can email me, call, or connect on LinkedIn — I typically reply within 24–48 hours.
+            </p>
+
+            <div className="contact-actions">
+              <a className="cta-btn" href="mailto:samaksharora.09@gmail.com">
+                <FaEnvelope /> Email
+              </a>
+              <a className="cta-btn cta-secondary" href="tel:+16474616474">
+                <FaPhone /> Call
+              </a>
+            </div>
+
+            <div className="contact-socials" style={{ marginTop: '0.6rem' }}>
+              <a
+                href="https://linkedin.com/in/arorasamaksh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-pill"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://github.com/samaksh-arora"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-pill"
+              >
+                <FaGithub />
+              </a>
             </div>
           </div>
         </div>
