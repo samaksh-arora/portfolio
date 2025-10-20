@@ -1,15 +1,20 @@
+/* overall */
 .contact {
   padding: 100px 0;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
+/* layout: keep two columns but visually balance without a form */
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 3rem;
+  align-items: start;
   margin-top: 2rem;
+  min-height: 320px; /* gives the right column presence */
 }
 
+/* left column */
 .contact-info h3 {
   font-size: 1.8rem;
   color: #2d3748;
@@ -18,90 +23,137 @@
 }
 
 .contact-info p {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: #718096;
   line-height: 1.6;
-  margin-bottom: 2rem;
+  margin-bottom: 1.6rem;
 }
 
+/* contact list items (cards) */
 .contact-details {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
+  max-width: 420px;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 1rem;
+  padding: 0.9rem 1rem;
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(25, 40, 50, 0.08);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  border: 1px solid rgba(102, 126, 234, 0.06);
 }
 
 .contact-item:hover {
-  transform: translateX(10px);
+  transform: translateX(6px);
+  box-shadow: 0 14px 40px rgba(25, 40, 50, 0.12);
 }
 
 .contact-icon {
   font-size: 1.2rem;
   color: #667eea;
-  min-width: 20px;
+  min-width: 26px;
 }
 
-.contact-item span {
-  color: #4a5568;
-  font-weight: 500;
+/* right column: purposeful contact card */
+.contact-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8));
+  padding: 1.8rem;
+  border-radius: 16px;
+  box-shadow: 0 14px 40px rgba(25, 40, 50, 0.08);
+  border: 1px solid rgba(102, 126, 234, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+  min-height: 260px;
 }
 
-.contact-form {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+/* headline inside the right card */
+.contact-card h4 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #2d3748;
+  font-weight: 600;
 }
 
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 1rem;
-  border: 2px solid #e2e8f0;
-  border-radius: 8px;
+/* short supporting text */
+.contact-card p {
+  margin: 0;
+  color: #556074;
+  line-height: 1.5;
   font-size: 1rem;
-  transition: border-color 0.3s ease;
-  font-family: inherit;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #667eea;
+/* action buttons row */
+.contact-actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
 }
 
-.form-group textarea {
-  resize: vertical;
-  min-height: 120px;
+/* CTA button look */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background: white;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.08);
+  color: #2b2f6b;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
-.contact-form .btn {
-  width: 100%;
-  font-size: 1.1rem;
-  padding: 1rem;
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 36px rgba(102, 126, 234, 0.12);
 }
 
-@media (max-width: 768px) {
+/* subtle secondary CTA */
+.cta-secondary {
+  background: transparent;
+  border: 1px solid rgba(74,85,104,0.12);
+  color: #4a5568;
+  box-shadow: none;
+}
+
+/* social row (small icons) */
+.contact-socials {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.social-pill {
+  padding: 0.45rem;
+  border-radius: 8px;
+  background: rgba(74,85,104,0.06);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  min-height: 36px;
+}
+
+/* responsiveness */
+@media (max-width: 992px) {
   .contact-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.75rem;
   }
 
-  .contact-form {
-    padding: 2rem;
+  .contact-card {
+    min-height: auto;
+    padding: 1.4rem;
   }
 }
