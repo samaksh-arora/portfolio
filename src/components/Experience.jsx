@@ -5,7 +5,7 @@ import './Experience.css';
 const Experience = () => {
   const experiences = [
     {
-      id: 1,
+      id: 2,
       title: 'Full Stack Developer Intern',
       company: 'Wayne State University',
       location: 'Detroit, Michigan',
@@ -26,7 +26,7 @@ const Experience = () => {
       ]
     },
     {
-      id: 2,
+      id: 3,
       title: 'Software Engineering Intern',
       company: 'POS Notebook',
       location: 'Toronto, Ontario',
@@ -46,7 +46,7 @@ const Experience = () => {
       ]
     },
     {
-      id: 3,
+      id: 1,
       title: 'Technical Consultant',
       company: 'Warrior Consulting Group',
       location: 'Detroit, Michigan',
