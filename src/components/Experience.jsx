@@ -44,6 +44,25 @@ const Experience = () => {
         'Improved user engagement by 25% through UI/UX improvements',
         'Maintained 99.9% application uptime'
       ]
+    },
+    {
+      id: 3,
+      title: 'Technical Consultant',
+      company: 'Warrior Consulting Group',
+      location: 'Detroit, Michigan',
+      duration: 'Fall 2025',
+      type: 'Intern',
+      responsibilities: [
+        'Lead 5 analysts evaluating IoT-enabled battery safety systems, boosting sensor data accuracy by 25% through cloud-based analytics',
+        'Assess containment and suppression tech, improving thermal event detection speed by 30% via standardized performance metrics',
+        'Benchmark ESSPI’s cloud training and compliance tools, enhancing regulatory coverage by 20% and reducing response latency'
+      ],
+      technologies: ['IoT', 'Arduino Cloud', 'Supression Tech', 'Hardware'],
+      achievements: [
+        'Co-ordinated Team Workflows',
+        'Generated 10+ reports',
+        'Successfully translated technical analysis into actionable recommendations'
+      ]
     }
     
   ];
