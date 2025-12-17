@@ -6,15 +6,15 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: 'Technical Consultant',
-      company: 'Warrior Consulting Group',
-      location: 'Detroit, Michigan',
-      duration: 'Fall 2025',
-      type: 'Intern',
+      title: 'Career Prep Fellow',
+      company: 'Uber',
+      location: 'San Francisco, California (Remote)',
+      duration: 'Present',
+      type: 'Fellow',
       responsibilities: [
-        'Lead 5 analysts evaluating IoT-enabled battery safety systems, boosting sensor data accuracy by 25% through cloud-based analytics',
-        'Assess containment and suppression tech, improving thermal event detection speed by 30% via standardized performance metrics',
-        'Benchmark ESSPI’s cloud training and compliance tools, enhancing regulatory coverage by 20% and reducing response latency'
+        'Participate in 1:1 mentorship sessions with Uber engineers and recruiters, receiving personalized feedback on technical interviews, resume optimization, and career strategy',
+        'Develop and refine problem-solving, communication, and system-thinking skills aligned with software engineering hiring standards at top tech companies',
+        'Attend 5+ structured workshops led by industry professionals, covering data structures & algorithms, technical interview strategies, behavioral interviews, and career navigation in tech'
       ],
       technologies: ['IoT', 'Arduino Cloud', 'Supression Tech', 'Hardware'],
       achievements: [
@@ -25,46 +25,44 @@ const Experience = () => {
     },
     {
       id: 2,
+      title: 'Software Development Intern',
+      company: 'Kid Ink (Newlab Detroit)',
+      location: 'Detroit, Michigan',
+      duration: 'Fall 2025',
+      type: 'Intern',
+      responsibilities: [
+        'Developed and deployed 2 event-driven web platforms that centralized schedules, speaker details, and registration links, supporting 200+ users and increasing event discoverability and attendance readiness',
+        'Optimized site performance and UX, achieving sub-2 second load times and improving user navigation efficiency through clear information architecture and responsive design',
+        'Iterated rapidly based on stakeholder feedback, shipping updates within 24–48 hours, aligning with the fast-paced needs of an early-stage startup'
+      ],
+      technologies: ['React', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'Component Based Architecture', 'State Management'],
+      achievements: [
+        'Launched 2 live event websites used by 100+ users',
+        'Delivered production-ready sites under tight deadlines',
+        'Produced scalable, reusable components for future events'
+      ]
+    },
+    {
+      id: 3,
       title: 'Full Stack Developer Intern',
       company: 'Wayne State University',
       location: 'Detroit, Michigan',
       duration: 'Summer 2025',
       type: 'Intern',
-     responsibilities: [
-       'Designed and developed Prizeversity platform using React.js, Node.js, and MongoDB',
+      responsibilities: [
+        'Designed and developed Prizeversity platform using React.js, Node.js, and MongoDB',
         'Implemented user-friendly interfaces for student participation in contests and rewards tracking',
         'Integrated secure authentication and real-time notifications to enhance user engagement',
-      'Managed backend APIs and database schemas to ensure scalable and efficient data handling',
+        'Managed backend APIs and database schemas to ensure scalable and efficient data handling',
         'Contributed in testing and debugging efforts, improving platform stability and reducing errors by 40%'
-],
+      ],
       technologies: ['React', 'Node.js', 'Tailwind CSS', 'GCP', 'Git', 'MongoDB'],
       achievements: [
         'Increased application performance by 40%',
         'Led team of 6 developers on major product launch',
         'Reduced bug reports by 35% through improved testing'
       ]
-    },
-    {
-      id: 3,
-      title: 'Software Engineering Intern',
-      company: 'POS Notebook',
-      location: 'Toronto, Ontario',
-      duration: 'Winter 2025',
-      type: 'Intern',
-      responsibilities: [
-        'Contributed to the development of core features of a Java-based POS application used by over 300 retailers',
-        'Reduced checkout errors by 40%, lowering failed transactions from 50+ per week to under 30, by implementing exception handling, real-time input validation, and transaction verification logic, leading to a 15% increase in successful payment rate',
-        'Collaborated on deployments using Git version control workflows, branch-based development, and code reviews',
-        'Participated in agile development processes and daily standups'
-      ],
-      technologies: ['Java', 'React.js', 'MySQL', 'Git', 'Hardware'],
-      achievements: [
-        'Successfully launched 3 major product features',
-        'Improved user engagement by 25% through UI/UX improvements',
-        'Maintained 99.9% application uptime'
-      ]
     }
-    
   ];
 
   return (
@@ -105,27 +103,31 @@ const Experience = () => {
                     </ul>
                   </div>
 
-                  <div className="technologies">
-                    <h5>
-                      <FaCode /> Technologies Used:
-                    </h5>
-                    <div className="tech-tags">
-                      {exp.technologies.map((tech, idx) => (
-                        <span key={idx} className="tech-tag">
-                          {tech}
-                        </span>
-                      ))}
+                  {exp.id !== 1 && (
+                    <div className="technologies">
+                      <h5>
+                      Technologies Used:
+                      </h5>
+                      <div className="tech-tags">
+                        {exp.technologies.map((tech, idx) => (
+                          <span key={idx} className="tech-tag">
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                  </div>
+                  )}
 
-                  <div className="achievements">
-                    <h5>Key Achievements:</h5>
-                    <ul>
-                      {exp.achievements.map((achievement, idx) => (
-                        <li key={idx}>{achievement}</li>
-                      ))}
-                    </ul>
-                  </div>
+                  {exp.id !== 1 && (
+                    <div className="achievements">
+                      <h5>Key Achievements:</h5>
+                      <ul>
+                        {exp.achievements.map((achievement, idx) => (
+                          <li key={idx}>{achievement}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               </div>
               
@@ -137,6 +139,10 @@ const Experience = () => {
             </div>
           ))}
         </div>
+
+        <p className="previous-experience-text">
+          <strong>Previous Experience:</strong> Technical Consultant @ Warrior Consulting Group, Software Engineering Intern @ POS Notebook
+        </p>
       </div>
     </section>
   );

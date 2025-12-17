@@ -227,6 +227,20 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.previous-experience-text {
+  margin-top: 2.5rem;
+  text-align: left;
+  font-size: 1.05rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+.previous-experience-text strong {
+  color: var(--michigan-blue);
+  font-weight: 600;
+}
+
+
 @keyframes slideInLeft {
   from {
     opacity: 0;
