@@ -20,7 +20,7 @@ const Projects = () => {
       image: '/drinkup.png',
       technologies: ['Next.js', 'Python', 'SQLite'],
       github: 'https://github.com/samaksh-arora/winhacks2025',
-      demo: 'https://www.youtube.com/watch?v=lVFicxcUrvY'
+      demo: 'https://github.com/samaksh-arora/winhacks2025'
     },
     {
       id: 3,
