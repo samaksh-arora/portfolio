@@ -17,11 +17,11 @@ const Hero = () => {
           </p>
           
           <div className="hero-buttons">
-            <a 
-              href="/Arora_Samaksh_Resume.pdf" 
-              target="_blank" 
-    rel="noopener noreferrer"
-    className="btn btn-primary"
+            <a
+              href="/Arora_Samaksh_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
             >
               Resume
             </a>
