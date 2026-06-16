@@ -9,14 +9,14 @@ const Experience = () => {
       title: 'Career Prep Fellow',
       company: 'Uber',
       location: 'San Francisco, California (Remote)',
-      duration: 'Present',
+      duration: 'Dec 2025 - Present',
       type: 'Fellow',
       responsibilities: [
         'Participate in 1:1 mentorship sessions with Uber engineers and recruiters, receiving personalized feedback on technical interviews, resume optimization, and career strategy',
         'Develop and refine problem-solving, communication, and system-thinking skills aligned with software engineering hiring standards at top tech companies',
         'Attend 5+ structured workshops led by industry professionals, covering data structures & algorithms, technical interview strategies, behavioral interviews, and career navigation in tech'
       ],
-      technologies: ['IoT', 'Arduino Cloud', 'Supression Tech', 'Hardware'],
+      technologies: [],
       achievements: [
         'Co-ordinated Team Workflows',
         'Generated 10+ reports',
@@ -25,21 +25,21 @@ const Experience = () => {
     },
     {
       id: 2,
-      title: 'Software Development Intern',
-      company: 'Kid Ink (Newlab Detroit)',
+      title: 'Application Engineer Co-op',
+      company: 'Integrity Tool & Mold',
       location: 'Detroit, Michigan',
       duration: 'Fall 2025',
-      type: 'Intern',
+      type: 'Co-op',
       responsibilities: [
-        'Developed and deployed 2 event-driven web platforms that centralized schedules, speaker details, and registration links, supporting 200+ users and increasing event discoverability and attendance readiness',
-        'Optimized site performance and UX, achieving sub-2 second load times and improving user navigation efficiency through clear information architecture and responsive design',
-        'Iterated rapidly based on stakeholder feedback, shipping updates within 24–48 hours, aligning with the fast-paced needs of an early-stage startup'
+        'Built and maintained applications on Palantir Foundry, a platform used by 1,000+ employees company-wide, developing tools adopted in production by multiple departments',
+        'Automated a department workflow previously coordinated via email chains by building a Foundry application, replacing manual back-and-forth with a centralized, trackable process',
+        'Developed custom React/TypeScript widgets within Foundry to extend standard platform components, enabling tailored data interactions not supported by out-of-the-box functionality'
       ],
-      technologies: ['React', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'Component Based Architecture', 'State Management'],
+      technologies: ['Palantir Foundry', 'React', 'TypeScript', 'Python'],
       achievements: [
-        'Launched 2 live event websites used by 100+ users',
-        'Delivered production-ready sites under tight deadlines',
-        'Produced scalable, reusable components for future events'
+        'Deployed production-ready applications for 1,000+ users',
+        'Automated manual workflows improving efficiency',
+        'Extended platform functionality with custom widgets'
       ]
     },
     {
@@ -47,21 +47,51 @@ const Experience = () => {
       title: 'Full Stack Developer Intern',
       company: 'Wayne State University',
       location: 'Detroit, Michigan',
-      duration: 'Summer 2025',
+      duration: 'Apr 2025 - Aug 2025',
       type: 'Intern',
       responsibilities: [
-        'Designed and developed Prizeversity platform using React.js, Node.js, and MongoDB',
-        'Implemented user-friendly interfaces for student participation in contests and rewards tracking',
-        'Integrated secure authentication and real-time notifications to enhance user engagement',
-        'Managed backend APIs and database schemas to ensure scalable and efficient data handling',
-        'Contributed in testing and debugging efforts, improving platform stability and reducing errors by 40%'
+        'Worked on Prizeversity.com under Professor Hadi Nasser, on full-stack development of a platform for extra-credit challenges',
+        'Implemented routes and MongoDB schemas for the site\'s feedback system, enabling efficient storage and retrieval of student input',
+        'Developed real-time automated user notifications using Socket.IO to enhance engagement and platform interactivity'
       ],
-      technologies: ['React', 'Node.js', 'Tailwind CSS', 'GCP', 'Git', 'MongoDB'],
+      technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.IO'],
       achievements: [
         'Increased application performance by 40%',
-        'Led team of 6 developers on major product launch',
-        'Reduced bug reports by 35% through improved testing'
+        'Deployed real-time notification system',
+        'Managed full-stack development from frontend to backend'
       ]
+    },
+    {
+      id: 4,
+      title: 'Software/Hardware Intern',
+      company: 'POS Notebook',
+      location: 'Toronto, ON',
+      duration: 'Aug 2024 - Dec 2024',
+      type: 'Intern',
+      responsibilities: [
+        'Contributed to the development of core features of a Java-based POS application used by over 300 retailers in the GTA Area',
+        'Installed and configured hardware at client locations, including POS terminals, EMV/NFC Card Readers, and barcode scanners',
+        'Collaborated on deployments using Git version control workflows, branch-based development, and weekly code reviews'
+      ],
+      technologies: ['Java', 'Git', 'Hardware Configuration'],
+      achievements: [
+        'Supported 300+ retail locations',
+        'Deployed core POS features',
+        'Managed hardware installations and configurations'
+      ]
+    },
+    {
+      id: 5,
+      title: 'Software Engineering Intern',
+      company: 'DTE Energy',
+      location: 'Detroit, Michigan',
+      duration: 'Incoming (Year-Round)',
+      type: 'Intern',
+      responsibilities: [
+        'Incoming DTE Software Engineering Intern, year-round opportunity'
+      ],
+      technologies: [],
+      achievements: []
     }
   ];
 

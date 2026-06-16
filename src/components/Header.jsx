@@ -61,20 +61,30 @@ const Header = () => {
           >
             Education
           </Link>
-          <Link 
-            to="experience" 
-            smooth={true} 
-            duration={500} 
+          <Link
+            to="experience"
+            smooth={true}
+            duration={500}
             onClick={closeMenu}
             activeClass="active"
             spy={true}
           >
             Experience
           </Link>
-          <Link 
-            to="skills" 
-            smooth={true} 
-            duration={500} 
+          <Link
+            to="leadership"
+            smooth={true}
+            duration={500}
+            onClick={closeMenu}
+            activeClass="active"
+            spy={true}
+          >
+            Leadership
+          </Link>
+          <Link
+            to="skills"
+            smooth={true}
+            duration={500}
             onClick={closeMenu}
             activeClass="active"
             spy={true}

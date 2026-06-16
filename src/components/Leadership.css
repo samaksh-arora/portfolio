@@ -1,0 +1,127 @@
+.leadership {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.leadership-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #007bff;
+}
+
+.leadership-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.leadership-header {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.leadership-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 50%;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+}
+
+.leadership-basic {
+  flex: 1;
+}
+
+.leadership-title {
+  font-size: 1.3rem;
+  margin: 0 0 0.3rem 0;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.organization {
+  font-size: 1.1rem;
+  margin: 0 0 0.8rem 0;
+  color: #34495e;
+  font-weight: 600;
+}
+
+.leadership-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-top: 0.8rem;
+}
+
+.leadership-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.location {
+  color: #e74c3c;
+}
+
+.duration {
+  color: #3498db;
+}
+
+.leadership-responsibilities {
+  margin-top: 1.5rem;
+}
+
+.leadership-responsibilities ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.leadership-responsibilities li {
+  padding: 0.7rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.leadership-responsibilities li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #3498db;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-title {
+    font-size: 1.1rem;
+  }
+
+  .leadership-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
