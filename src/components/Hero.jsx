@@ -1,8 +1,8 @@
-import React from ‘react’;
-import { Link } from ‘react-scroll’;
-import { FaGithub, FaLinkedin, FaEnvelope } from ‘react-icons/fa’;
-import DecryptedText from ‘./DecryptedText’;
-import ‘./Hero.css’;
+import React from 'react';
+import { Link } from 'react-scroll';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import DecryptedText from './DecryptedText';
+import './Hero.css';
 
 const Hero = () => {
   return (
