@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaReact, FaJs, FaHtml5, FaNode, FaGit, FaPython} from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiCplusplus } from 'react-icons/si';
+import { SiMongodb, SiCplusplus } from 'react-icons/si';
 import './Skills.css';
 
 const Skills = () => {
