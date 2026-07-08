@@ -69,9 +69,8 @@
   border: 1px solid rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1.25rem;
-  min-height: 260px;
 }
 
 /* headline inside the right card */
@@ -90,41 +89,67 @@
   font-size: 1rem;
 }
 
-/* action buttons row */
-.contact-actions {
+/* Formspree contact form */
+.contact-form {
   display: flex;
-  gap: 0.8rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.form-group input,
+.form-group textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: white;
+  color: #2d3748;
+  resize: vertical;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #000000;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
 }
 
 /* CTA button look */
 .cta-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.6rem;
   padding: 0.75rem 1rem;
   border-radius: 10px;
   font-weight: 600;
+  font-size: 1rem;
   text-decoration: none;
   border: none;
   cursor: pointer;
-  background: white;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  color: #000000;
+  background: #000000;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
 .cta-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
-}
-
-/* subtle secondary CTA */
-.cta-secondary {
-  background: transparent;
-  border: 1px solid rgba(74,85,104,0.12);
-  color: #4a5568;
-  box-shadow: none;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.2);
 }
 
 /* social row (small icons) */
@@ -132,6 +157,7 @@
   display: flex;
   gap: 0.6rem;
   align-items: center;
+  margin-top: 0.6rem;
 }
 
 .social-pill {

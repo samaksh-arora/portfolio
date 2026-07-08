@@ -39,23 +39,39 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* ✅ Right side (new contact card) */}
+          {/* Right side: Formspree contact form */}
           <div className="contact-card">
-            <h4>Prefer to reach out directly?</h4>
+            <h4>Send me a message</h4>
             <p>
-              You can email me, call, or connect on LinkedIn — I typically reply within 24–48 hours.
+              Fill out the form and I'll get back to you within 24–48 hours.
             </p>
 
-            <div className="contact-actions">
-              <a className="cta-btn" href="mailto:samaksharora.09@gmail.com">
-                <FaEnvelope /> Email
-              </a>
-              <a className="cta-btn cta-secondary" href="tel:+16474616474">
-                <FaPhone /> Call
-              </a>
-            </div>
+            <form
+              className="contact-form"
+              action="https://formspree.io/f/xlgyoboz"
+              method="POST"
+            >
+              <div className="form-group">
+                <label htmlFor="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
 
-            <div className="contact-socials" style={{ marginTop: '0.6rem' }}>
+              <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" className="cta-btn">
+                <FaEnvelope /> Send Message
+              </button>
+            </form>
+
+            <div className="contact-socials">
               <a
                 href="https://linkedin.com/in/arorasamaksh"
                 target="_blank"
