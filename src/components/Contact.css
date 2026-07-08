@@ -46,7 +46,7 @@
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(25, 40, 50, 0.08);
   transition: transform 0.28s ease, box-shadow 0.28s ease;
-  border: 1px solid rgba(102, 126, 234, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .contact-item:hover {
@@ -66,7 +66,7 @@
   padding: 1.8rem;
   border-radius: 16px;
   box-shadow: 0 14px 40px rgba(25, 40, 50, 0.08);
-  border: 1px solid rgba(102, 126, 234, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,14 +109,14 @@
   border: none;
   cursor: pointer;
   background: white;
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   color: #000000;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
 .cta-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 18px 36px rgba(102, 126, 234, 0.12);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
 }
 
 /* subtle secondary CTA */

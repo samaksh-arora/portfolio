@@ -8,9 +8,9 @@ const menuItems = [
   { label: 'About', ariaLabel: 'Go to about section', link: '#about' },
   { label: 'Education', ariaLabel: 'Go to education section', link: '#education' },
   { label: 'Experience', ariaLabel: 'Go to experience section', link: '#experience' },
+  { label: 'Projects', ariaLabel: 'Go to projects section', link: '#projects' },
   { label: 'Leadership', ariaLabel: 'Go to leadership section', link: '#leadership' },
   { label: 'Skills', ariaLabel: 'Go to skills section', link: '#skills' },
-  { label: 'Projects', ariaLabel: 'Go to projects section', link: '#projects' },
   { label: 'Contact', ariaLabel: 'Go to contact section', link: '#contact' }
 ];
 
@@ -52,14 +52,14 @@ const Header = () => {
             <Link to="experience" smooth={true} duration={500} activeClass="active" spy={true}>
               Experience
             </Link>
+            <Link to="projects" smooth={true} duration={500} activeClass="active" spy={true}>
+              Projects
+            </Link>
             <Link to="leadership" smooth={true} duration={500} activeClass="active" spy={true}>
               Leadership
             </Link>
             <Link to="skills" smooth={true} duration={500} activeClass="active" spy={true}>
               Skills
-            </Link>
-            <Link to="projects" smooth={true} duration={500} activeClass="active" spy={true}>
-              Projects
             </Link>
             <Link to="contact" smooth={true} duration={500} activeClass="active" spy={true}>
               Contact
