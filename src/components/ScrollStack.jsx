@@ -185,28 +185,12 @@ const ScrollStack = ({
 
   const setupLenis = useCallback(() => {
     if (useWindowScroll) {
-      const lenis = new Lenis({
-        duration: 1.2,
-        easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        smoothWheel: true,
-        touchMultiplier: 2,
-        infinite: false,
-        wheelMultiplier: 1,
-        lerp: 0.1,
-        syncTouch: true,
-        syncTouchLerp: 0.075
-      });
-
-      lenis.on('scroll', handleScroll);
-
-      const raf = time => {
-        lenis.raf(time);
-        animationFrameRef.current = requestAnimationFrame(raf);
-      };
-      animationFrameRef.current = requestAnimationFrame(raf);
-
-      lenisRef.current = lenis;
-      return lenis;
+      // Window scroll stays native here — layering Lenis's own interpolated
+      // smoothing on top of the whole page's scroll (fixed header, nav overlay,
+      // etc.) fought the browser's native/trackpad momentum and caused jitter.
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      window.addEventListener('resize', handleScroll);
+      return null;
     } else {
       const scroller = scrollerRef.current;
       if (!scroller) return;
@@ -279,6 +263,10 @@ const ScrollStack = ({
       if (lenisRef.current) {
         lenisRef.current.destroy();
       }
+      if (useWindowScroll) {
+        window.removeEventListener('scroll', handleScroll);
+        window.removeEventListener('resize', handleScroll);
+      }
       stackCompletedRef.current = false;
       cardsRef.current = [];
       transformsCache.clear();
@@ -297,7 +285,8 @@ const ScrollStack = ({
     useWindowScroll,
     onStackComplete,
     setupLenis,
-    updateCardTransforms
+    updateCardTransforms,
+    handleScroll
   ]);
 
   return (

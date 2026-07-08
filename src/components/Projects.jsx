@@ -69,7 +69,7 @@ const Projects = () => {
 
       <div className="projects-stack-wrapper">
         <ScrollStack
-          useWindowScroll={false}
+          useWindowScroll={true}
           itemDistance={120}
           itemScale={0.03}
           itemStackDistance={40}
