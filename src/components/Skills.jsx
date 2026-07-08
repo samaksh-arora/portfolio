@@ -15,18 +15,21 @@ const Skills = () => {
     { name: 'C++', icon: <SiCplusplus /> },
   ];
 
+  // Duplicated so the track can loop seamlessly from -50%.
+  const marqueeSkills = [...skills, ...skills];
+
   return (
     <section id="skills" className="skills">
       <div className="container">
         <h2 className="section-title">Skills & Technologies</h2>
-        
-        <div className="skills-grid">
-          {skills.map((skill, index) => (
-            <div key={index} className="skill-card">
-              <div className="skill-icon">
-                {skill.icon}
-              </div>
-              <h3>{skill.name}</h3>
+      </div>
+
+      <div className="skills-marquee">
+        <div className="skills-marquee-track">
+          {marqueeSkills.map((skill, index) => (
+            <div key={index} className="skill-pill">
+              <span className="skill-icon">{skill.icon}</span>
+              <span className="skill-name">{skill.name}</span>
             </div>
           ))}
         </div>

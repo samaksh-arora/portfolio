@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt, FaCode } from 'react-icons/fa';
-import ScrollStack, { ScrollStackItem } from './ScrollStack';
 import './Projects.css';
 
 const Projects = () => {
@@ -65,44 +64,20 @@ const Projects = () => {
     <section id="projects" className="projects">
       <div className="container">
         <h2 className="section-title">Featured Projects</h2>
-      </div>
 
-      <div className="projects-stack-wrapper">
-        <ScrollStack
-          useWindowScroll={true}
-          itemDistance={120}
-          itemScale={0.03}
-          itemStackDistance={40}
-          baseScale={0.88}
-          rotationAmount={0}
-          blurAmount={0}
-        >
+        <div className="projects-grid">
           {projects.map((project) => (
-            <ScrollStackItem key={project.id}>
-              <div className="project-card">
-                <div className="project-image">
-                  {project.image ? (
-                    <img src={project.image} alt={project.title} />
-                  ) : (
-                    <div className="project-image-placeholder">
-                      <FaCode />
-                      <span>No Preview Available</span>
-                    </div>
-                  )}
-                </div>
-
-                <div className="project-info">
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-
-                  <div className="project-technologies">
-                    {project.technologies.map((tech, index) => (
-                      <span key={index} className="tech-tag">
-                        {tech}
-                      </span>
-                    ))}
+            <div key={project.id} className="project-card">
+              <div className="project-image">
+                {project.image ? (
+                  <img src={project.image} alt={project.title} />
+                ) : (
+                  <div className="project-image-placeholder">
+                    <FaCode />
+                    <span>No Preview Available</span>
                   </div>
-
+                )}
+                <div className="project-overlay">
                   <div className="project-links">
                     {project.github && (
                       <a
@@ -111,7 +86,7 @@ const Projects = () => {
                         rel="noopener noreferrer"
                         className="project-link"
                       >
-                        <FaGithub /> Code
+                        <FaGithub />
                       </a>
                     )}
                     {project.demo && (
@@ -121,15 +96,28 @@ const Projects = () => {
                         rel="noopener noreferrer"
                         className="project-link"
                       >
-                        <FaExternalLinkAlt /> Live Demo
+                        <FaExternalLinkAlt />
                       </a>
                     )}
                   </div>
                 </div>
               </div>
-            </ScrollStackItem>
+
+              <div className="project-info">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+
+                <div className="project-technologies">
+                  {project.technologies.map((tech, index) => (
+                    <span key={index} className="tech-tag">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
           ))}
-        </ScrollStack>
+        </div>
       </div>
     </section>
   );
