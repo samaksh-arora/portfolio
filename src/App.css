@@ -72,11 +72,6 @@ body {
   color: #ffffff;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
 @media (max-width: 768px) {
   .container {
     padding: 0 15px;

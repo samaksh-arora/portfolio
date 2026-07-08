@@ -6,10 +6,18 @@
   overflow-x: visible;
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: scroll-position;
+}
+
+/* In window-scroll mode the window owns scrolling, not this wrapper —
+   internal overflow/height here would fight the page scroll and cause jitter. */
+.scroll-stack-scroller--window {
+  height: auto;
+  overflow: visible;
+  overscroll-behavior: auto;
+  will-change: auto;
 }
 
 .scroll-stack-inner {
